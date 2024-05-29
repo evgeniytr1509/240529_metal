@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sale_metal</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Перелік кольорових металів для реалізації.</h1>
+    </header>
+
+    <section class="greeting">
+      <h2>Реалізація брухту кольорових металів</h2>
+      <p>
+        АТ НЗФ має можливість запропонувати до реалізації у червні 2024р. брухт
+        кольорових металів наступного виду та кількості:
+      </p>
+      <ol>
+        <li>5350303 Мідь 2 = 3,935 т.</li>
+        <li>5001752 Мідь 4 = 0,145 т.</li>
+        <li>5001753 Мідь 5 = 0,135 т.</li>
+        <li>5001755 Мідь 7 = 4,470 т.</li>
+        <li>5001756 Мідь 9 (стружка вьюн) = 0,5 т.</li>
+        <li>5350304 Мідь 13 (кабель) = 0,235 т.</li>
+        <li>5001748 Бронза 13 = 0,175 т.</li>
+        <li>5001749 Бронза 14 = 0,05 т.</li>
+        <li>5002358 Латунь 6 = 1,475 т.</li>
+        <li>5002359 Латунь 7 = 0,015 т.</li>
+        <li>5001746 Латунь 9 = 0,145 т.</li>
+        <li>
+          5001746 Латунь 9 = 0,185 т. (гайки з підвищеним вмістом кремнію).
+        </li>
+        <li>5001747 Латунь 22 = 0,09 т.</li>
+      </ol>
+    </section>
+
+    <section class="contacts">
+      <h2>Контакти</h2>
+      <p>Сакієв Ігор Юрійович</p>
+      <p>Телефон: +3 (066) 397-16-20</p>
+      <p>Email: sakiev.snab@nzf.com.ua</p>
+    </section>
+    <h2>Фото брухту</h2>
+    <section class="products">
+      <div class="product">
+        <h3>Позиція 1</h3>
+        <p>Мідь 2, Вага - 3,935 т.</p>
+        <p>Фото 1</p>
+        <img
+          src="01_cupper_2_1.jpg"
+          alt="Продукт 1"
+          onclick="openModal('product1.jpg')"
+        />
+        <p>Фото 2</p>
+        <img
+          src="01_cupper_2_2.jpg"
+          alt="Продукт 2"
+          onclick="openModal('product2.jpg')"
+        />
+        <div class="product-description"></div>
+      </div>
+
+      <!-- Добавьте оставшиеся товары аналогичным образом -->
+      <div class="product">
+        <h3>Позиція 2</h3>
+        <p>Мідь 4, Вага - 0,145 т.</p>
+        <p>Фото 1</p>
+        <img
+          src="02_copper_4_1.jpg"
+          alt="Продукт 2"
+          onclick="openModal('product1.jpg')"
+        />
+        <p>Фото 2</p>
+        <img
+          src="02_copper_4_2.jpg"
+          alt="Продукт 2"
+          onclick="openModal('product2.jpg')"
+        />
+        <div class="product-description"></div>
+      </div>
+
+      <!-- Добавьте оставшиеся товары аналогичным образом -->
+      <div class="product">
+        <h3>Позиція 3</h3>
+        <p>Мідь 5, Вага - 0,135 т.</p>
+        <p>Фото 1</p>
+        <img
+          src="03_copper_5.jpg"
+          alt="Продукт 3"
+          onclick="openModal('product1.jpg')"
+        />
+        <div class="product-description"></div>
+      </div>
+
+      <div class="product">
+        <h3>Позиція 4</h3>
+        <p>Мідь 5, Вага - 0,135 т.</p>
+        <p>Фото 1</p>
+        <img
+          src="04_copper_7.jpg"
+          alt="Продукт 4"
+          onclick="openModal('product1.jpg')"
+        />
+        <div class="product-description"></div>
+      </div>
+
+      <div class="product">
+        <h3>Позиція 5</h3>
+        <p>Мідь 9 (стружка вьюн). Вага 0,5 т.</p>
+        <p>Фото 1</p>
+        <img
+          src="05_copper_9.jpg"
+          alt="Продукт 5"
+          onclick="openModal('product1.jpg')"
+        />
+        <div class="product-description"></div>
+      </div>
+
+      <div class="product">
+        <h3>Позиція 6</h3>
+        <p>Мідь 13 (кабель). Вага 0,235 т.</p>
+        <p>Фото 1</p>
+
+        <img
+          src="06_copper_13.jpg"
+          alt="Продукт 3"
+          onclick="openModal('product1.jpg')"
+        />
+        <div class="product-description"></div>
+      </div>
+
+      <div class="product">
+        <h3>Позиція 7</h3>
+        <p>Бронза 13 Вага - 0,175 т.</p>
+        <p>Фото 1</p>
+
+        <img
+          src="07_bronze_13.jpg"
+          alt="Продукт 3"
+          onclick="openModal('product1.jpg')"
+        />
+        <div class="product-description"></div>
+      </div>
+
+      <div class="product">
+        <h3>Позиція 8</h3>
+        <p>Бронза 14 Вага - 0,05 т.</p>
+        <p>Фото 1</p>
+
+        <img
+          src="08_bronze_14.jpg"
+          alt="Продукт 8"
+          onclick="openModal('product1.jpg')"
+        />
+        <div class="product-description"></div>
+      </div>
+
+      <div class="product">
+        <h3>Позиція 9</h3>
+        <p>Латунь 6 Вага - 1,475 т.</p>
+        <p>Фото 1</p>
+
+        <img
+          src="09_brass_6.jpg"
+          alt="Продукт 9"
+          onclick="openModal('product1.jpg')"
+        />
+        <div class="product-description"></div>
+      </div>
+
+      <div class="product">
+        <h3>Позиція 10</h3>
+        <p>Латунь 7 Вага - 0,015 т.</p>
+        <p>Фото 1</p>
+
+        <img
+          src="10_brass_7.jpg"
+          alt="Продукт 10"
+          onclick="openModal('product1.jpg')"
+        />
+        <div class="product-description"></div>
+      </div>
+
+      <div class="product">
+        <h3>Позиція 11</h3>
+        <p>Латунь 9 Вага - 0,145 т.</p>
+        <p>Фото 1</p>
+
+        <img
+          src="11_brass_9.jpg"
+          alt="Продукт 11"
+          onclick="openModal('product1.jpg')"
+        />
+        <div class="product-description"></div>
+      </div>
+
+      <div class="product">
+        <h3>Позиція 12</h3>
+        <p>Латунь 9 = 0,185 т. (гайки з підвищеним вмістом кремнію).</p>
+        <p>Фото 1</p>
+        <img
+          src="12_nut_1.jpg"
+          alt="Продукт 12"
+          onclick="openModal('product1.jpg')"
+        />
+
+        <p>Фото 2</p>
+        <img
+          src="12_nut_2.jpg"
+          alt="Продукт 12"
+          onclick="openModal('product1.jpg')"
+        />
+
+        <div class="product-description"></div>
+      </div>
+    </section>
+  </body>
+</html>
